@@ -19,6 +19,15 @@ const GsapTimeline = () => {
     })
 
     timeline.to("#yellow-box", {
+      y:250,
+      scale:2,
+      rotation: 360,
+      borderRadius: "100%",
+      duration: 2, 
+      ease: "back.inOut"
+    });
+
+    timeline.to("#yellow-box", {
       x: 500,
       scale: 1,
       rotation: 360,
