@@ -71,7 +71,9 @@ const GsapTimeline = () => {
       </p>
 
       <div className="mt-20 space-y-10">
-        <button onClick={() => {}}>Play/Pause</button>
+        <button onClick={() => {
+          timeline.paused() ? timeline.play() : timeline.pause() /* when button is clicked, if paused true = play, else paused false = pause */
+        }}>Play/Pause</button>
 
         <div id="yellow-box" className="w-20 h-20 bg-yellow-500 rounded-lg" /> {/* rounded-lg is 8px border radius */}
       </div>
